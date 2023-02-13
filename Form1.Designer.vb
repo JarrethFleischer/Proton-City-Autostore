@@ -24,36 +24,28 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(175, 12)
+        Me.TextBox1.Location = New System.Drawing.Point(187, 12)
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(613, 221)
+        Me.TextBox1.Size = New System.Drawing.Size(601, 221)
         Me.TextBox1.TabIndex = 0
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(31, 15)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(138, 20)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Service Information"
         '
         'Button1
         '
         Me.Button1.BackgroundImage = CType(resources.GetObject("Button1.BackgroundImage"), System.Drawing.Image)
-        Me.Button1.Location = New System.Drawing.Point(175, 256)
+        Me.Button1.Location = New System.Drawing.Point(187, 253)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(156, 65)
         Me.Button1.TabIndex = 2
@@ -62,7 +54,7 @@ Partial Class Form1
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(351, 256)
+        Me.Button2.Location = New System.Drawing.Point(363, 253)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(156, 65)
         Me.Button2.TabIndex = 3
@@ -71,7 +63,7 @@ Partial Class Form1
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(534, 256)
+        Me.Button3.Location = New System.Drawing.Point(546, 253)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(156, 65)
         Me.Button3.TabIndex = 4
@@ -80,7 +72,7 @@ Partial Class Form1
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(175, 336)
+        Me.Button4.Location = New System.Drawing.Point(187, 333)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(156, 65)
         Me.Button4.TabIndex = 5
@@ -89,7 +81,7 @@ Partial Class Form1
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(351, 336)
+        Me.Button5.Location = New System.Drawing.Point(363, 333)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(156, 65)
         Me.Button5.TabIndex = 6
@@ -98,39 +90,49 @@ Partial Class Form1
         '
         'Button6
         '
-        Me.Button6.Location = New System.Drawing.Point(534, 336)
+        Me.Button6.Location = New System.Drawing.Point(546, 333)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(156, 65)
         Me.Button6.TabIndex = 7
         Me.Button6.Text = "Button6"
         Me.Button6.UseVisualStyleBackColor = True
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(12, 12)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(167, 184)
+        Me.PictureBox1.TabIndex = 8
+        Me.PictureBox1.TabStop = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TextBox1)
         Me.Name = "Form1"
         Me.Text = "Form1"
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Label1 As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
     Friend WithEvents Button5 As Button
     Friend WithEvents Button6 As Button
+    Friend WithEvents PictureBox1 As PictureBox
 End Class
