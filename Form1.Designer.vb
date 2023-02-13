@@ -25,8 +25,8 @@ Partial Class Form1
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.buttonConfig = New System.Windows.Forms.Button()
+        Me.buttonExit = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
@@ -52,23 +52,23 @@ Partial Class Form1
         Me.Button1.Text = "Button1"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'Button2
+        'buttonConfig
         '
-        Me.Button2.Location = New System.Drawing.Point(363, 253)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(156, 65)
-        Me.Button2.TabIndex = 3
-        Me.Button2.Text = "Button2"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.buttonConfig.Location = New System.Drawing.Point(363, 253)
+        Me.buttonConfig.Name = "buttonConfig"
+        Me.buttonConfig.Size = New System.Drawing.Size(156, 65)
+        Me.buttonConfig.TabIndex = 3
+        Me.buttonConfig.Text = "Show Config"
+        Me.buttonConfig.UseVisualStyleBackColor = True
         '
-        'Button3
+        'buttonExit
         '
-        Me.Button3.Location = New System.Drawing.Point(546, 253)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(156, 65)
-        Me.Button3.TabIndex = 4
-        Me.Button3.Text = "Button3"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.buttonExit.Location = New System.Drawing.Point(546, 253)
+        Me.buttonExit.Name = "buttonExit"
+        Me.buttonExit.Size = New System.Drawing.Size(156, 65)
+        Me.buttonExit.TabIndex = 4
+        Me.buttonExit.Text = "Exit"
+        Me.buttonExit.UseVisualStyleBackColor = True
         '
         'Button4
         '
@@ -115,8 +115,8 @@ Partial Class Form1
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.buttonExit)
+        Me.Controls.Add(Me.buttonConfig)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TextBox1)
         Me.Name = "Form1"
@@ -129,8 +129,8 @@ Partial Class Form1
 
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
+    Friend WithEvents buttonConfig As Button
+    Friend WithEvents buttonExit As Button
     Friend WithEvents Button4 As Button
     Friend WithEvents Button5 As Button
     Friend WithEvents Button6 As Button
